@@ -1,0 +1,3 @@
+django>=5.0,<5.1
+psycopg2-binary          # Damit Django mit der PostgreSQL-Datenbank sprechen kann
+django-cors-headers      # Wichtig, damit Next.js (Frontend) mit Django (Backend) kommunizieren darf

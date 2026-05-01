@@ -1,0 +1,14 @@
+# Nutze die exakte Python-Version
+FROM python:3.12
+
+# Arbeitsverzeichnis im Container
+WORKDIR /app
+
+# Kopiere die Liste der benötigten Pakete (Libraries)
+COPY requirements.txt .
+
+# Installiere die Libraries (exakt die gleichen bei jedem Build)
+RUN pip install -r requirements.txt
+
+# Kopiere den restlichen Code
+COPY . .
